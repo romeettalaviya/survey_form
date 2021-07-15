@@ -15,7 +15,7 @@
                         <input id="name" type="text" required placeholder="Enter your name">
 
                         <label for="email" id="email-label">Email</label>
-                        <input id="email" type="text" required placeholder="Enter your email">
+                        <input id="email" type="email" required placeholder="Enter your email">
 
                         <label for="number" id="number-label">Enter your rate from 1 to 10</label>
                         <input id="number" type="number" min="1" max="10" required placeholder="Enter your rate">
@@ -33,13 +33,13 @@
 
                         <fieldset>
                             <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                            <input type="radio" name="recommend" checked id="definitely" value="definitely">
+                            <input type="radio" name="recommend" checked id="definitely" value="3">
                             <label for="definitely">Definitely</label><br>
 
-                            <input type="radio" name="recommend" id="maybe" >
+                            <input type="radio" name="recommend" id="maybe" value="3">
                             <label for="maybe">Maybe</label><br>
 
-                            <input type="radio" name="recommend" id="not-sure">
+                            <input type="radio" name="recommend" id="not-sure" value="3">
                             <label for="not-sure">Not sure</label><br>
                         </fieldset>
                         <br><br>
@@ -76,13 +76,12 @@
                         <label for="orum">Forum</label><br>
                         <input type="checkbox" id="additional-courses" name="additional-courses" value="additional-courses">
                         <label for="additional-courses">Additional Courses</label><br>
-                        
+
+                        <label for="comment">Any comments or suggestions?</label>
+                        <textarea rows="4" cols="50" id="comment">Enter your text here...</textarea>
+
+                        <button type="submit" id="submit">submit</button>
                     </form>
-
-                    <label for="comment">Any comments or suggestions?</label>
-                    <textarea rows="4" cols="50" id="comment">Enter your text here...</textarea>
-
-                    <button type="submit" id="submit">submit</button>
                 </div>
             </div>
       </div>
